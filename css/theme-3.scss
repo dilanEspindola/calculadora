@@ -1,0 +1,73 @@
+$very-dark-violet-main-background: hsl(268, 75%, 9%);
+$very-dark-violet-toggle-background-keypad-background-screen-background: hsl(
+  268,
+  71%,
+  12%
+);
+$dark-violet-key-background: hsl(281, 89%, 26%);
+$vivid-magenta-key-shadow: hsl(285, 91%, 52%);
+$pure-cyan-key-background-toggle: hsl(176, 100%, 44%);
+$soft-cyan-key-shadow: hsl(177, 92%, 70%);
+$very-dark-violet-key-background: hsl(268, 47%, 21%);
+$dark-magenta-key-shadow: hsl(290, 70%, 36%);
+$light-yellow-text: hsl(52, 100%, 62%);
+$very-dark-blue-text: hsl(198, 20%, 13%);
+$white-text: hsl(0, 0, 100%);
+
+body.active-3 {
+    background: $very-dark-violet-main-background;
+  
+    .contenedor-calculadora .titulo-tema .temas p {
+      color: $light-yellow-text;        
+    }
+  
+    .contenedor-calculadora .titulo-tema .titulo-cambiador-tema h3 {
+      color: $light-yellow-text;
+    }
+  
+    .titulo-tema .titulo-cambiador-tema .cambiador-tema p {
+      color: $light-yellow-text;    
+    }
+    
+    .titulo-cambiador-tema .cambiador-tema .caja {
+      background: $very-dark-violet-toggle-background-keypad-background-screen-background;
+    }
+  
+    .cambiador-tema .caja .circulo {                
+      background: $pure-cyan-key-background-toggle;
+      left: 67%;
+    }
+  
+    .pantalla input {    
+      background: $very-dark-violet-toggle-background-keypad-background-screen-background;
+      color: $light-yellow-text;
+    }
+  
+    .cuerpo-calc {
+      background-color: $very-dark-violet-toggle-background-keypad-background-screen-background;
+    }
+  
+    button {
+      background: $very-dark-violet-key-background;
+      box-shadow: 0px 3px 0px 0px $dark-magenta-key-shadow;
+      color: $light-yellow-text;
+    }
+
+    .del {
+        background: $dark-violet-key-background;
+        box-shadow: 0 4px 0 $vivid-magenta-key-shadow;
+        color: #fff;
+    }
+
+    .reset {
+        background: $dark-violet-key-background;
+        box-shadow: 0 4px 0 $vivid-magenta-key-shadow;
+        color: #fff;
+      }
+      
+      .equal {
+        background: $pure-cyan-key-background-toggle;
+        box-shadow: 0 4px 0 $soft-cyan-key-shadow;
+        color: #000;
+      }
+}

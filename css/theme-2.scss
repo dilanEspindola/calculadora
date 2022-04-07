@@ -1,0 +1,67 @@
+$light-gray-main-background: hsl(0, 0%, 90%);
+$grayish-red-toggle-background-keypad-background: hsl(0, 5%, 81%);
+$very-light-gray-screen-background: hsl(0, 0%, 93%);
+$dark-moderate-cyan-key-background: hsl(185, 42%, 37%);
+$very-dark-cyan-key-shadow: hsl(185, 58%, 25%);
+$orange-key-background-toggle: hsl(25, 98%, 40%);
+$dark-orange-key-shadow: hsl(25, 99%, 27%);
+$light-grayish-yellow-key-background: hsl(40, 8%, 93%);
+$dark-grayish-orange-key-shadow: hsl(35, 11%, 61%);
+$very-dark-grayish-yellow-text: hsl(60, 10%, 19%);
+$very-dark-grayish-yellow: hsl(60, 10%, 19%);
+
+body.active-2 {
+    background: $light-gray-main-background;
+  
+    .contenedor-calculadora .titulo-tema .temas p {
+      color: $very-dark-grayish-yellow;        
+    }
+  
+    .contenedor-calculadora .titulo-tema .titulo-cambiador-tema h3 {
+      color: $very-dark-grayish-yellow;
+    }
+  
+    .titulo-tema .titulo-cambiador-tema .cambiador-tema p {
+      color: $very-dark-grayish-yellow;    
+    }
+    
+    .titulo-cambiador-tema .cambiador-tema .caja {
+      background: $grayish-red-toggle-background-keypad-background;
+    }
+  
+    .cambiador-tema .caja .circulo {                
+      background: $orange-key-background-toggle;
+      left: 37%;
+    }
+  
+    .pantalla input {    
+      background: $very-light-gray-screen-background;
+      color: $very-dark-grayish-yellow;
+    }
+  
+    .cuerpo-calc {
+      background-color:$grayish-red-toggle-background-keypad-background;
+    }
+  
+    button {
+      box-shadow: 0px 3px 0px 0px hsl(28, 16%, 65%);
+    }
+
+    .del {
+        background: $dark-moderate-cyan-key-background;
+        box-shadow: 0 4px 0 $very-dark-cyan-key-shadow;
+        color: #fff;
+    }
+
+    .reset {
+        background: $dark-moderate-cyan-key-background;
+        box-shadow: 0 4px 0 $very-dark-cyan-key-shadow;
+        color: #fff;
+      }
+      
+      .equal {
+        background: $orange-key-background-toggle;
+        box-shadow: 0 4px 0 $dark-orange-key-shadow;
+        color: #fff;
+      }
+}

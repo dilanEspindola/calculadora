@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,700;1,500&family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&family=Rubik:wght@300;400;500&family=Spartan:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "M PLUS 1", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  background: hsl(222deg, 26%, 31%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contenedor-calculadora {
+  width: 35%;
+}
+
+.contenedor-calculadora .titulo-tema {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-calculadora .titulo-tema .temas {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+  gap: 15px;
+}
+
+.contenedor-calculadora .titulo-tema .temas p {
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.titulo-tema .titulo-cambiador-tema {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-calculadora .titulo-tema .titulo-cambiador-tema h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.titulo-tema .titulo-cambiador-tema .cambiador-tema {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+.titulo-tema .titulo-cambiador-tema .cambiador-tema p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.titulo-cambiador-tema .cambiador-tema .caja {
+  width: 50%;
+  height: 25px;
+  border-radius: 25px;
+  background: hsl(224deg, 36%, 15%);
+  position: relative;
+  padding: 5px 5px;
+  overflow: hidden;
+}
+
+.cambiador-tema .caja .circulo {
+  position: absolute;
+  height: 60%;
+  border-radius: 50%;
+  width: 16px;
+  background: hsl(6deg, 63%, 50%);
+}
+
+.pantalla {
+  margin-top: 20px;
+}
+
+.pantalla input {
+  width: 100%;
+  padding: 30px 20px;
+  font-size: 24px;
+  text-align: right;
+  background: hsl(224deg, 36%, 15%);
+  border: none;
+  color: #fff;
+  outline: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cuerpo-calc {
+  background-color: hsl(223deg, 31%, 20%);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.btn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  width: 90px;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0px 3px 0px 0px hsl(28deg, 16%, 65%);
+  margin: 10px 10px;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.del {
+  background: hsl(225deg, 21%, 49%);
+  box-shadow: 0 4px 0 hsl(224deg, 28%, 35%);
+}
+
+.reset {
+  grid-column: 1/3;
+  width: 90%;
+  background: hsl(225deg, 21%, 49%);
+  box-shadow: 0 4px 0 hsl(224deg, 28%, 35%);
+}
+
+.equal {
+  width: 90%;
+  grid-column: 3/5;
+}
+
+body.active-1 {
+  background: hsl(222deg, 26%, 31%);
+}
+body.active-1 .contenedor-calculadora .titulo-tema .temas p {
+  color: #fff;
+}
+body.active-1 .contenedor-calculadora .titulo-tema .titulo-cambiador-tema h3 {
+  color: #fff;
+}
+body.active-1 .titulo-tema .titulo-cambiador-tema .cambiador-tema p {
+  color: #fff;
+}
+body.active-1 .titulo-cambiador-tema .cambiador-tema .caja {
+  background: hsl(224deg, 36%, 15%);
+}
+body.active-1 .cambiador-tema .caja .circulo {
+  background: hsl(6deg, 63%, 50%);
+}
+body.active-1 .pantalla input {
+  background: hsl(224deg, 36%, 15%);
+}
+body.active-1 .cuerpo-calc {
+  background-color: hsl(223deg, 31%, 20%);
+}
+body.active-1 button {
+  box-shadow: 0px 3px 0px 0px hsl(28deg, 16%, 65%);
+  color: hsl(221deg, 14%, 31%);
+}
+body.active-1 .del {
+  background: hsl(225deg, 21%, 49%);
+  box-shadow: 0 4px 0 hsl(224deg, 28%, 35%);
+  color: #fff;
+}
+body.active-1 .reset {
+  background: hsl(225deg, 21%, 49%);
+  box-shadow: 0 4px 0 hsl(224deg, 28%, 35%);
+  color: #fff;
+}
+body.active-1 .equal {
+  background: hsl(6deg, 63%, 50%);
+  box-shadow: 0 4px 0 hsl(6deg, 70%, 34%);
+  color: #fff;
+}
+
+body.active-2 {
+  background: hsl(0deg, 0%, 90%);
+}
+body.active-2 .contenedor-calculadora .titulo-tema .temas p {
+  color: hsl(60deg, 10%, 19%);
+}
+body.active-2 .contenedor-calculadora .titulo-tema .titulo-cambiador-tema h3 {
+  color: hsl(60deg, 10%, 19%);
+}
+body.active-2 .titulo-tema .titulo-cambiador-tema .cambiador-tema p {
+  color: hsl(60deg, 10%, 19%);
+}
+body.active-2 .titulo-cambiador-tema .cambiador-tema .caja {
+  background: hsl(0deg, 5%, 81%);
+}
+body.active-2 .cambiador-tema .caja .circulo {
+  background: hsl(25deg, 98%, 40%);
+  left: 37%;
+}
+body.active-2 .pantalla input {
+  background: hsl(0deg, 0%, 93%);
+  color: hsl(60deg, 10%, 19%);
+}
+body.active-2 .cuerpo-calc {
+  background-color: hsl(0deg, 5%, 81%);
+}
+body.active-2 button {
+  box-shadow: 0px 3px 0px 0px hsl(28deg, 16%, 65%);
+}
+body.active-2 .del {
+  background: hsl(185deg, 42%, 37%);
+  box-shadow: 0 4px 0 hsl(185deg, 58%, 25%);
+  color: #fff;
+}
+body.active-2 .reset {
+  background: hsl(185deg, 42%, 37%);
+  box-shadow: 0 4px 0 hsl(185deg, 58%, 25%);
+  color: #fff;
+}
+body.active-2 .equal {
+  background: hsl(25deg, 98%, 40%);
+  box-shadow: 0 4px 0 hsl(25deg, 99%, 27%);
+  color: #fff;
+}
+
+body.active-3 {
+  background: hsl(268deg, 75%, 9%);
+}
+body.active-3 .contenedor-calculadora .titulo-tema .temas p {
+  color: hsl(52deg, 100%, 62%);
+}
+body.active-3 .contenedor-calculadora .titulo-tema .titulo-cambiador-tema h3 {
+  color: hsl(52deg, 100%, 62%);
+}
+body.active-3 .titulo-tema .titulo-cambiador-tema .cambiador-tema p {
+  color: hsl(52deg, 100%, 62%);
+}
+body.active-3 .titulo-cambiador-tema .cambiador-tema .caja {
+  background: hsl(268deg, 71%, 12%);
+}
+body.active-3 .cambiador-tema .caja .circulo {
+  background: hsl(176deg, 100%, 44%);
+  left: 67%;
+}
+body.active-3 .pantalla input {
+  background: hsl(268deg, 71%, 12%);
+  color: hsl(52deg, 100%, 62%);
+}
+body.active-3 .cuerpo-calc {
+  background-color: hsl(268deg, 71%, 12%);
+}
+body.active-3 button {
+  background: hsl(268deg, 47%, 21%);
+  box-shadow: 0px 3px 0px 0px hsl(290deg, 70%, 36%);
+  color: hsl(52deg, 100%, 62%);
+}
+body.active-3 .del {
+  background: hsl(281deg, 89%, 26%);
+  box-shadow: 0 4px 0 hsl(285deg, 91%, 52%);
+  color: #fff;
+}
+body.active-3 .reset {
+  background: hsl(281deg, 89%, 26%);
+  box-shadow: 0 4px 0 hsl(285deg, 91%, 52%);
+  color: #fff;
+}
+body.active-3 .equal {
+  background: hsl(176deg, 100%, 44%);
+  box-shadow: 0 4px 0 hsl(177deg, 92%, 70%);
+  color: #000;
+}
+
+/*# sourceMappingURL=index.css.map */

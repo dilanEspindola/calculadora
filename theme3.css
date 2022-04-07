@@ -1,0 +1,58 @@
+body.active-3 {
+  background: var(--very-dark-violet-main-background);
+}
+
+.contenedor-calculadora .titulo-tema .temas p.active-3 {
+  color: var(--light-yellow-text);
+}
+
+.titulo-tema .titulo-cambiador-tema h3.active-3 {
+  color: var(--light-yellow-text);
+}
+
+.titulo-tema .titulo-cambiador-tema .cambiador-tema p.active-3 {
+  color: var(--light-yellow-text);
+}
+
+.titulo-cambiador-tema .cambiador-tema .caja-active-3 {
+  background: var(
+    --very-dark-violet-toggle-background-keypad-background-screen-background
+  );
+}
+
+.cambiador-tema .caja .circulo-active-3 {
+  background: var(--pure-cyan-key-background-toggle);
+  left: 70%;
+}
+
+.pantalla input.active-3 {
+  background: var(
+    --very-dark-violet-toggle-background-keypad-background-screen-background
+  );
+  color: var(--light-yellow-text);
+}
+
+.cuerpo-calc.active-3 {
+  background: var(
+    --very-dark-violet-toggle-background-keypad-background-screen-background
+  );
+}
+
+button.active-3 {
+  background: var(--dark-violet-key-background);
+  box-shadow: 0 4px 0 0 var(--vivid-magenta-key-shadow);
+  color: var(--light-yellow-text);
+}
+
+.del-active-3,
+.reset-active-3 {
+  background: var(--dark-violet-key-background);
+  color: #fff;
+  box-shadow: 0px 4px 0px 0px var(--vivid-magenta-key-shadow);
+}
+
+.equal-active-3 {
+  background: var(--dark-violet-key-background);
+  color: #000;
+  box-shadow: 0px 4px 0px 0px var(--vivid-magenta-key-shadow);
+}

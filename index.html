@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Calculadora</title>
+  </head>
+  <body class="">
+    <div class="contenedor-calculadora">
+      <div class="titulo-tema">
+        <div class="temas">
+          <p class="uno">1</p>
+          <p class="dos">2</p>
+          <p class="tres">3</p>
+        </div>
+        <div class="titulo-cambiador-tema">
+          <h3 class="">calc</h3>
+          <div class="cambiador-tema">
+            <p class="">Theme</p>
+            <div class="caja">
+              <div class="circulo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pantalla">
+        <form action="" name="calculadora">
+          <input type="text" name="text" id="pantalla" readonly />
+        </form>
+      </div>
+
+      <div class="cuerpo-calc">
+        <div class="btn">
+          <button class="num" onclick="document.calculadora.text.value+='7'">
+            7
+          </button>
+          <button class="num" onclick="document.calculadora.text.value+='8'">
+            8
+          </button>
+          <button class="num" onclick="document.calculadora.text.value+='9'">
+            9
+          </button>
+          <button class="del" onclick="borrar()">DEL</button>
+          <button class="num" onclick="document.calculadora.text.value+='4'">
+            4
+          </button>
+          <button class="num" onclick="document.calculadora.text.value+='5'">
+            5
+          </button>
+          <button class="num" onclick="document.calculadora.text.value+='7'">
+            6
+          </button>
+          <button onclick="document.calculadora.text.value+='+'">+</button>
+          <button class="num" onclick="document.calculadora.text.value+='1'">
+            1
+          </button>
+          <button class="num" onclick="document.calculadora.text.value+='2'">
+            2
+          </button>
+          <button class="num" onclick="document.calculadora.text.value+='3'">
+            3
+          </button>
+          <button onclick="document.calculadora.text.value+='-'">-</button>
+          <button onclick="document.calculadora.text.value+='.'">.</button>
+          <button class="num" onclick="document.calculadora.text.value+='0'">
+            0
+          </button>
+          <button onclick="document.calculadora.text.value+='/'">/</button>
+          <button onclick="document.calculadora.text.value+='*'">X</button>
+          <button class="reset" onclick="reset()">RESET</button>
+          <button
+            class="equal"
+            onclick="document.calculadora.text.value = eval(calculadora.text.value)"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="./scripts/changeTheme.js"></script>
+  </body>
+</html>
