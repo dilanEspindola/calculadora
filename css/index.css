@@ -144,6 +144,105 @@ button {
   grid-column: 3/5;
 }
 
+@media (max-width: 1200px) {
+  button {
+    width: 70px;
+  }
+
+  .del {
+    font-size: 20px;
+  }
+
+  .reset {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1092px) {
+  button {
+    width: 60px;
+  }
+}
+@media (max-width: 968px) {
+  .contenedor-calculadora {
+    width: 50%;
+  }
+
+  .reset {
+    width: 80%;
+  }
+
+  .equal {
+    width: 80%;
+  }
+
+  .contenedor-calculadora .titulo-tema .temas {
+    margin-right: 5px;
+    gap: 20px;
+  }
+
+  .titulo-cambiador-tema .cambiador-tema {
+    flex-basis: 40%;
+  }
+}
+@media (max-width: 680px) {
+  .contenedor-calculadora {
+    width: 65%;
+  }
+
+  button {
+    width: 70px;
+  }
+}
+@media (max-width: 540px) {
+  .contenedor-calculadora {
+    width: 80%;
+  }
+
+  .reset {
+    width: 85%;
+  }
+
+  .equal {
+    width: 85%;
+  }
+
+  .titulo-cambiador-tema .cambiador-tema {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 440px) {
+  .contenedor-calculadora {
+    width: 90%;
+  }
+
+  .contenedor-calculadora .titulo-tema .temas {
+    margin-right: 5px;
+    gap: 25px;
+  }
+}
+@media (max-width: 410px) {
+  button {
+    width: 60px;
+  }
+
+  .titulo-cambiador-tema .cambiador-tema {
+    flex-basis: 60%;
+  }
+}
+@media (max-width: 370px) {
+  button {
+    width: 50px;
+    font-size: 16px;
+  }
+
+  .reset {
+    font-size: 16px;
+  }
+
+  .del {
+    font-size: 16px;
+  }
+}
 body.active-1 {
   background: hsl(222deg, 26%, 31%);
 }
@@ -205,7 +304,7 @@ body.active-2 .titulo-cambiador-tema .cambiador-tema .caja {
 }
 body.active-2 .cambiador-tema .caja .circulo {
   background: hsl(25deg, 98%, 40%);
-  left: 37%;
+  left: 40%;
 }
 body.active-2 .pantalla input {
   background: hsl(0deg, 0%, 93%);
@@ -250,7 +349,7 @@ body.active-3 .titulo-cambiador-tema .cambiador-tema .caja {
 }
 body.active-3 .cambiador-tema .caja .circulo {
   background: hsl(176deg, 100%, 44%);
-  left: 67%;
+  left: 70%;
 }
 body.active-3 .pantalla input {
   background: hsl(268deg, 71%, 12%);
@@ -278,6 +377,11 @@ body.active-3 .equal {
   background: hsl(176deg, 100%, 44%);
   box-shadow: 0 4px 0 hsl(177deg, 92%, 70%);
   color: #000;
+}
+@media (max-width: 540px) {
+  body.active-3 .cambiador-tema .caja .circulo {
+    left: 77%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

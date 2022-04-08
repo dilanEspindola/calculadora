@@ -12,7 +12,7 @@ $very-dark-violet-key-background: hsl(268, 47%, 21%);
 $dark-magenta-key-shadow: hsl(290, 70%, 36%);
 $light-yellow-text: hsl(52, 100%, 62%);
 $very-dark-blue-text: hsl(198, 20%, 13%);
-$white-text: hsl(0, 0, 100%);
+// $white-text: hsl(0, 0, 100%);
 
 body.active-3 {
     background: $very-dark-violet-main-background;
@@ -35,7 +35,7 @@ body.active-3 {
   
     .cambiador-tema .caja .circulo {                
       background: $pure-cyan-key-background-toggle;
-      left: 67%;
+      left: 70%;
     }
   
     .pantalla input {    
@@ -69,5 +69,11 @@ body.active-3 {
         background: $pure-cyan-key-background-toggle;
         box-shadow: 0 4px 0 $soft-cyan-key-shadow;
         color: #000;
+      }
+      
+      @media (max-width: 540px ) {
+        .cambiador-tema .caja .circulo {
+          left: 77%;
+        }
       }
 }
